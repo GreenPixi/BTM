@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+	<title>Single Test</title>
+</head>
+<body>
+
+	
+	<div style="width:200px;height: 200px;background-color: red;"></div>
+
+
+<script>
+function hideQuery(x) {
+    if (x.matches) { // If media query matches
+    	// navHide();
+    	document.getElementById('main-container-area').style.backgroundColor = '#222';
+    }
+}
+
+var y = window.matchMedia("(max-width: 600px)");
+hideQuery(x); // Call listener function at run time
+x.addListener(hideQuery); // Attach listener function on state changes
+</script>
+</body>
+</html>

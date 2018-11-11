@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Noto+Sans:400,500,700" rel="stylesheet">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!--bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>User | Dashboard</title>
+</head>
+<body>
+
+    <!--sidebar-->
+    <div id="main-sidebar" class="main-sidebar">
+        <div class="menu-holder">
+
+            <div class="brand" style="overflow: hidden;">
+                <img src="assets/img/logo_02.png" alt="logo" width="250px">
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-search"></i> Search</a></li>
+                    
+                    <li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-user-plus"></i> Register Employee</a></li>
+
+                    <li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" href="#"><i class="fas fa-donate" style="margin-right: 7px;"></i> Installment <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
+                        <ul class="collapse" id="collapseExample2">
+                            <li><a href="#">Add</a></li>
+                            <li><a href="#">Search</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3" href="#"><i style="margin-right: 7px;" class="fas fa-passport"></i> Passport <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
+                        <ul class="collapse" id="collapseExample3">
+                            <li><a href="#">Add</a></li>
+                            <li><a href="#">Search</a></li>
+                            <li><a href="#">Add Reminder</a></li>
+                            <li><a href="#">Search Reminder</a></li> <!--also show list of all taken passport-->
+                        </ul>
+                    </li>
+
+                    <li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4" href="#"><i style="margin-right: 7px;" class="fas fa-hand-holding-usd"></i> Loan <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
+                        <ul class="collapse" id="collapseExample4">
+                            <li><a href="#">Add</a></li>
+                            <li><a href="#">Search</a></li><!--also show list of all taken loan-->
+                        </ul>
+                    </li>
+
+                    <li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-list-ul"></i> Project Lists</a></li>
+
+                    <li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-comments"></i> Message</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--end sidebar-->
+    
+    <!--main container-->
+    <div id="main-container-area" class="main-container-area">
+            
+        
+        <!--header area-->
+        <header class="header-area">
+
+            <!--hamburger icon-->
+            <div style="padding-left: 10px;"><a class="slide-icon" href="#" onclick="navShow();"><i class="fas fa-bars"></i></a></div>
+
+            <!--msg-->
+            <div class="msg ml-auto">
+                <ul>
+                    <li><a href="#" class="dropdown-toggle badge-item" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-comments"></i><span class="notification-badge">10</span></a>
+                        <ul class="dropdown-menu profile-body" aria-labelledby="dropdownMenuLink">
+                            <li>Message (20)</li>
+
+                            <li><a href="#"><div class="msg-icon"><i class="far fa-comment"></i></div> <div class="msg-body">MaXadul Islam <span class="badge badge-danger">2</span></div></a></li>
+
+                            <li><a href="#"><div class="msg-icon"><i class="far fa-comment"></i></div> <div class="msg-body">Md Jony <span class="badge badge-danger">3</span></div></a></li>
+
+                            <li><a href="#"><div class="msg-icon"><i class="far fa-comment"></i></div><div class="msg-body">Md Mizan Hossin <span class="badge badge-danger">4</span></div></a></li>
+
+                            <li class="view-all-ntf"><a href="#">View All Messages</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--end msg-->
+
+            <!--bell-->
+            <div class="bell">
+                <ul>
+                    <li><a href="#" class="dropdown-toggle badge-item" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-bell"></i><span class="notification-badge">10</span></a>
+                        <ul class="dropdown-menu profile-body" aria-labelledby="dropdownMenuLink2">
+                            <li>Notification (3)</li>
+
+                            <li><a href="#"><div class="msg-icon"><i class="fas fa-passport"></i></div> <div class="msg-body">Passport Expiring <span class="badge badge-danger">50</span></div></a></li>
+
+                            <li><a href="#"><div class="msg-icon"><i class="fas fa-id-card"></i></div> <div class="msg-body">Visa Expiring <span class="badge badge-danger">105</span></div></a></li>
+
+                            <li><a href="#"><div class="msg-icon"><i class="far fa-check-circle"></i></div><div class="msg-body">New event added</div></a></li>
+
+                            <li class="view-all-ntf"><a href="#">View All Notifications</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--end bell-->
+            
+            <!--user-img"-->
+            <div class="user-img-holder"><img class="user-img" src="assets/img/user.png" alt="user image" width="50" height="50"></div>
+            <!--end user-img"-->
+
+            <!--profile-->
+            <div class="profile">
+                <ul>
+                    <li class="profile-list"><a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kamal Khan</a>
+                        <ul class="dropdown-menu profile-body" aria-labelledby="dropdownMenuLink3">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Message</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li class="power-off"><a href="#"><i class="fas fa-power-off"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--end profile-->
+
+        </header>
+        <!--end header area-->
+
+        <!--main-content-->
+        <div class="main-content-area" style="padding: 0 20px">
+            
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="page-header-heading"><h4>Dashboard <span class="user-badge">User</span></h4></div>
+                </div>
+
+                <!--notice area-->
+                <div class="row flex-wrap notice-area">
+                    <div class="col-md-3">
+                        <div class="card mb-3 box-shadow">
+                            <div class="card-header">
+                                <div><i class="fas fa-passport"></i></div><div><span> Expiry Notice!</span></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="the-card-n">10</div>
+                                <div class="the-card-t"><span>Passport</span> <br> Expiring Soon!</div>
+                            
+                            <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card mb-3 box-shadow">
+                            <div class="card-header">
+                                <div><i class="fas fa-passport"></i></div><div><span> Expiry Notice!</span></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="the-card-n">10</div>
+                                <div class="the-card-t"><span>Passport</span> <br> Expiring Soon!</div>
+                            
+                            <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card mb-3 box-shadow">
+                            <div class="card-header">
+                                <div><i class="fas fa-passport"></i></div><div><span> Expiry Notice!</span></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="the-card-n">12</div>
+                                <div class="the-card-t"><span>Passport</span> <br> Expiring Soon!</div>
+                            
+                            <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card mb-3 box-shadow">
+                            <div class="card-header">
+                                <div><i class="fas fa-passport"></i></div><div><span> Expiry Notice!</span></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="the-card-n">10</div>
+                                <div class="the-card-t"><span>Passport</span> <br> Expiring Soon!</div>
+                            
+                            <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--notice area-->
+
+            </div>
+
+        </div>
+        <!--end main-content-->
+    </div>
+    <!--end main container-->
+
+
+
+<!--jQuery JS-->
+<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+<!--Popper JS-->
+<script src="assets/js/popper.min.js"></script>
+<!--Bootstrap JS-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!--Custome JS-->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
