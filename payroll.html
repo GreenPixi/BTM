@@ -16,7 +16,7 @@
 	<!-- <link rel="stylesheet" type="text/css" href="assets/css/css03.css"> -->
 	<link rel="stylesheet" type="text/css" href="assets/css/newcss.css">
 
-	<title>Dashboard :: User</title>
+	<title>Dashboard :: Payroll</title>
 </head>
 <body>
 
@@ -28,6 +28,30 @@
 		</div>
 
 		<div id="hamburger-icon"><a class="slide-icon" href="#" onclick="navShow()"><i class="fas fa-bars"></i></a></div>
+
+
+		<!--search-->
+		<div class="header-search-bar">
+			<form>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <input type="search" class="form-control" id="inputEmail4" placeholder="Search..." required>
+			    </div>
+			    <div class="form-group col-md-3">
+					<select id="inputState" class="form-control">
+						<option selected>Passport No.</option>
+						<option>Employee Id</option>
+						<option>Project Id</option>
+						<option>Name</option>
+					</select>
+			    </div>
+			    <div class="form-group col-md-3">
+			      <button type="submit" class="btn btn-primary btn-lg btn-block">Search</button>
+			    </div>
+			  </div>
+			</form>
+		</div>
+		<!--search-->
 
 		<!--msg-->
 		<div class="msg ml-auto">
@@ -70,13 +94,13 @@
 		<!--end bell-->
 
 		<!--user-img"-->
-		<div class="user-img-holder"><img class="user-img" src="assets/img/user.png" alt="user image" width="50" height="50"></div>
+		<div class="user-img-holder"><img class="user-img" src="assets/img/user.svg" alt="user image" width="50" height="50"></div>
 		<!--end user-img"-->
 
 		<!--profile-->
 		<div class="profile">
 			<ul>
-				<li class="profile-list"><a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kamal Khan</a>
+				<li class="profile-list"><a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User Name</a>
 					<ul class="dropdown-menu profile-body" aria-labelledby="dropdownMenuLink3">
 						<li><a href="#">Profile</a></li>
 						<li><a href="#">Message</a></li>
@@ -95,40 +119,36 @@
 	<div id="sidebar-area" class="main-sidebar">
 		<div class="the-spacer" style="margin-bottom: 30px;"></div>
 		<div class="side-menu">
-			<ul>
-				<li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+				<ul>
 
-				<li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-search"></i> Search</a></li>
-				
-				<li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-user-plus"></i> Register Employee</a></li>
+					<li class="side-menu-item"><a class="menu-link-item" href="payroll.html"><i style="margin-right: 7px;" class="fas fa-tachometer-alt"></i> Dashboard</a></li>
 
-				<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" href="#"><i class="fas fa-donate" style="margin-right: 7px;"></i> Installment <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
-					<ul class="collapse" id="collapseExample2">
-						<li><a href="#">Add</a></li>
-						<li><a href="#">Search</a></li>
-					</ul>
-				</li>
+					<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample30" role="button" aria-expanded="false" aria-controls="collapseExample30" href="#"><i class="fas fa-search" style="margin-right: 7px;"></i> Search <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
+						<ul class="collapse" id="collapseExample30">
+							<li><a href="#">Employee</a></li>
+							<li><a href="#">Installment</a></li>
+							<li><a href="#">Loan</a></li>
+							<li><a href="#">Passport</a></li>
+						</ul>
+					</li>
 
-				<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3" href="#"><i style="margin-right: 7px;" class="fas fa-passport"></i> Passport <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
-					<ul class="collapse" id="collapseExample3">
-						<li><a href="#">Add</a></li>
-						<li><a href="#">Search</a></li>
-						<li><a href="#">Add Reminder</a></li>
-						<li><a href="#">Search Reminder</a></li> <!--also show list of all taken passport-->
-					</ul>
-				</li>
+					<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4" href="#"><i style="margin-right: 7px;" class="fas fa-hand-holding-usd"></i> Salary <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
+						<ul class="collapse" id="collapseExample4">
+							<li><a href="#">Add</a></li>
+							<li><a href="#">Search</a></li><!--also show list of all taken loan-->
+						</ul>
+					</li>
 
-				<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4" href="#"><i style="margin-right: 7px;" class="fas fa-hand-holding-usd"></i> Loan <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
-					<ul class="collapse" id="collapseExample4">
-						<li><a href="#">Add</a></li>
-						<li><a href="#">Search</a></li><!--also show list of all taken loan-->
-					</ul>
-				</li>
+					<li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-comments"></i> Message</a></li>
 
-				<li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-list-ul"></i> Project Lists</a></li>
+					<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample34" role="button" aria-expanded="false" aria-controls="collapseExample34" href="#"><i style="margin-right: 7px;" class="fas fa-list-ul"></i> Others <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
+						<ul class="collapse" id="collapseExample34">
+							<li><a href="#">View Hourly Rates</a></li>
+							<li><a href="#">Project List</a></li>
+						</ul>
+					</li>
 
-				<li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-comments"></i> Message</a></li>
-			</ul>
+				</ul>
 		</div>
 	</div>
 
@@ -141,7 +161,7 @@
 		<div class="container-fluid">
 
 			<div class="row">
-				<div class="page-header-heading"><h4>Dashboard <span class="user-badge">User</span></h4></div>
+				<div class="page-header-heading"><h4>Dashboard <span class="payroll-badge">Payroll</span></h4></div>
 			</div>
 			
 

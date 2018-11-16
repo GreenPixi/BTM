@@ -16,7 +16,7 @@
 	<!-- <link rel="stylesheet" type="text/css" href="assets/css/css03.css"> -->
 	<link rel="stylesheet" type="text/css" href="assets/css/newcss.css">
 
-	<title>Dashboard :: User</title>
+	<title>View Passport Reminder :: User</title>
 </head>
 <body>
 
@@ -28,31 +28,6 @@
 		</div>
 
 		<div id="hamburger-icon"><a class="slide-icon" href="#" onclick="navShow()"><i class="fas fa-bars"></i></a></div>
-
-
-			<!--search-->
-			<div class="header-search-bar">
-				<form>
-				  <div class="form-row">
-				    <div class="form-group col-md-6">
-				      <input type="search" class="form-control" id="inputEmail4" placeholder="Search..." required>
-				    </div>
-				    <div class="form-group col-md-3">
-						<select id="inputState" class="form-control">
-							<option selected>Passport No.</option>
-							<option>Employee Id</option>
-							<option>Project Id</option>
-							<option>Name</option>
-						</select>
-				    </div>
-				    <div class="form-group col-md-3">
-				      <button type="submit" class="btn btn-primary btn-lg btn-block">Search</button>
-				    </div>
-				  </div>
-				</form>
-			</div>
-			<!--search-->
-
 
 		<!--msg-->
 		<div class="msg ml-auto">
@@ -129,28 +104,28 @@
 
 				<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" href="#"><i class="fas fa-donate" style="margin-right: 7px;"></i> Installment <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
 					<ul class="collapse" id="collapseExample2">
-						<li><a href="add-installment.html">Add</a></li>
-						<li><a href="search-installment.html">Search</a></li>
+						<li><a href="#">Add</a></li>
+						<li><a href="#">Search</a></li>
 					</ul>
 				</li>
 
 				<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3" href="#"><i style="margin-right: 7px;" class="fas fa-passport"></i> Passport <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
 					<ul class="collapse" id="collapseExample3">
-						<li><a href="add-passport.html">Add</a></li>
-						<li><a href="search-passport.html">Search</a></li>
-						<li><a href="add-reminder.html">Add Reminder</a></li>
-						<li><a href="view-all-reminder.html">View All Reminder</a></li> <!--also show list of all taken passport-->
+						<li><a href="#">Add</a></li>
+						<li><a href="#">Search</a></li>
+						<li><a href="#">Add Reminder</a></li>
+						<li><a href="#">Search Reminder</a></li> <!--also show list of all taken passport-->
 					</ul>
 				</li>
 
 				<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4" href="#"><i style="margin-right: 7px;" class="fas fa-hand-holding-usd"></i> Loan <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
 					<ul class="collapse" id="collapseExample4">
-						<li><a href="add-loan.html">Add</a></li>
-						<li><a href="view-loan.html">View Loan</a></li><!--also show list of all taken loan-->
+						<li><a href="#">Add</a></li>
+						<li><a href="#">Search</a></li><!--also show list of all taken loan-->
 					</ul>
 				</li>
 
-				<li class="side-menu-item"><a class="menu-link-item" href="project-list.html"><i style="margin-right: 7px;" class="fas fa-list-ul"></i> Project Lists</a></li>
+				<li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-list-ul"></i> Project Lists</a></li>
 
 				<li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-comments"></i> Message</a></li>
 			</ul>
@@ -166,69 +141,80 @@
 		<div class="container-fluid">
 
 			<div class="row">
-				<div class="page-header-heading"><h4>Dashboard <span class="user-badge">User</span></h4></div>
+				<div class="page-header-heading"><h4>Passport Reminder View <span class="user-badge">User</span></h4></div>
 			</div>
 			
-
-			<!--notice area-->
-			<div class="row flex-wrap notice-area">
-				<div class="col-lg-3">
-					<div class="card mb-3 box-shadow">
-					  	<div class="card-header">
-					  		<div><i class="fas fa-passport"></i></div><div><span> Expiry Notice!</span></div>
-					  	</div>
-					  	<div class="card-body">
-					  		<div class="the-card-n">10</div>
-					  		<div class="the-card-t"><span>Passport</span> <br> Expiring Soon!</div>
-					  	
-					    <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
-					  	</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3">
-					<div class="card mb-3 box-shadow">
-					  	<div class="card-header">
-					  		<div><i class="fas fa-passport"></i></div><div><span> Expiry Notice!</span></div>
-					  	</div>
-					  	<div class="card-body">
-					  		<div class="the-card-n">10</div>
-					  		<div class="the-card-t"><span>Passport</span> <br> Expiring Soon!</div>
-					  	
-					    <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
-					  	</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3">
-					<div class="card mb-3 box-shadow">
-					  	<div class="card-header">
-					  		<div><i class="fas fa-passport"></i></div><div><span> Expiry Notice!</span></div>
-					  	</div>
-					  	<div class="card-body">
-					  		<div class="the-card-n">12</div>
-					  		<div class="the-card-t"><span>Passport</span> <br> Expiring Soon!</div>
-					  	
-					    <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
-					  	</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3">
-					<div class="card mb-3 box-shadow">
-					  	<div class="card-header">
-					  		<div><i class="fas fa-passport"></i></div><div><span> Expiry Notice!</span></div>
-					  	</div>
-					  	<div class="card-body">
-					  		<div class="the-card-n">10</div>
-					  		<div class="the-card-t"><span>Passport</span> <br> Expiring Soon!</div>
-					  	
-					    <!-- <p class="card-text">Some quick example text to build on the card title</p> -->
-					  	</div>
+			<!--search-->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="the-search-bar box-shadow">
+						<form>
+						  <div class="form-row">
+						    <div class="form-group col-md-9">
+						      <input type="search" class="form-control" id="inputEmail4" placeholder="Enter Passport No..." required>
+						    </div>
+						    <div class="form-group col-md-3">
+						      <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fas fa-search"></i> &nbsp;&nbsp;Search</button>
+						    </div>
+						  </div>
+						</form>
 					</div>
 				</div>
 			</div>
-			<!--notice area-->
+			<!--search-->
+
+
+			<!--Add installment form-->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!--full form-->
+					<div class="form-holder box-shadow pt-5">
+
+					<table class="table table-striped">
+					  <thead>
+					    <tr>
+					      <th scope="col">#</th>
+					      <th scope="col">Passport No.</th>
+					      <th scope="col">Taken Date</th>
+					      <th scope="col">Remark</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">1</th>
+					      <td>BD456987</td>
+					      <td>01/01/1992</td>
+					      <td>For Sticker</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">2</th>
+					      <td>BD456987</td>
+					      <td>01/01/1992</td>
+					      <td>For Visa</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">3</th>
+					      <td>BD456987</td>
+					      <td>01/01/1992</td>
+					      <td>For Visa</td>
+					    </tr>
+					  </tbody>
+					</table>					
+
+
+
+					</div>
+					<!--form holder-->
+				</div>
+				<!--end col-md-12-->
+			</div>
+			<!--Add installment form-->
+			<!--end row-->
+
+
+			
 		</div>
 		<!-- container-fluid -->
 	</div>
