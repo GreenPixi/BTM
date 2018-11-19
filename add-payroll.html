@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Font-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Noto+Sans:400,500,700" rel="stylesheet">
+	<!--fontawesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!--bootstrap CSS-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!--Custom CSS-->
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/css03.css"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/newcss.css">
+
+	<title>Salary Add :: Payroll</title>
+</head>
+<body>
+
+	<!--Navbar-->
+	<header id="navbar-area" class="header-area">
+
+		<div id="brand" class="brand">
+			<img src="assets/img/logo_02.png" alt="logo" width="250" height="75">
+		</div>
+
+		<div id="hamburger-icon"><a class="slide-icon" href="#" onclick="navShow()"><i class="fas fa-bars"></i></a></div>
+
+		<!--msg-->
+		<div class="msg ml-auto">
+			<ul>
+				<li><a href="#" class="dropdown-toggle badge-item" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-comments"></i><span class="notification-badge">10</span></a>
+					<ul class="dropdown-menu profile-body" aria-labelledby="dropdownMenuLink">
+						<li>Message (20)</li>
+
+						<li><a href="#"><div class="msg-icon"><i class="far fa-comment"></i></div> <div class="msg-body">MaXadul Islam <span class="badge badge-danger">2</span></div></a></li>
+
+						<li><a href="#"><div class="msg-icon"><i class="far fa-comment"></i></div> <div class="msg-body">Md Jony <span class="badge badge-danger">3</span></div></a></li>
+
+						<li><a href="#"><div class="msg-icon"><i class="far fa-comment"></i></div><div class="msg-body">Md Mizan Hossin <span class="badge badge-danger">4</span></div></a></li>
+
+						<li class="view-all-ntf"><a href="#">View All Messages</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--end msg-->
+
+		<!--bell-->
+		<div class="bell">
+			<ul>
+				<li><a href="#" class="dropdown-toggle badge-item" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-bell"></i><span class="notification-badge">10</span></a>
+					<ul class="dropdown-menu profile-body" aria-labelledby="dropdownMenuLink2">
+						<li>Notification (3)</li>
+
+						<li><a href="#"><div class="msg-icon"><i class="fas fa-passport"></i></div> <div class="msg-body">Passport Expiring <span class="badge badge-danger">50</span></div></a></li>
+
+						<li><a href="#"><div class="msg-icon"><i class="fas fa-id-card"></i></div> <div class="msg-body">Visa Expiring <span class="badge badge-danger">105</span></div></a></li>
+
+						<li><a href="#"><div class="msg-icon"><i class="far fa-check-circle"></i></div><div class="msg-body">New event added</div></a></li>
+
+						<li class="view-all-ntf"><a href="#">View All Notifications</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--end bell-->
+
+		<!--user-img"-->
+		<div class="user-img-holder"><img class="user-img" src="assets/img/user.svg" alt="user image" width="50" height="50"></div>
+		<!--end user-img"-->
+
+		<!--profile-->
+		<div class="profile">
+			<ul>
+				<li class="profile-list"><a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User Name</a>
+					<ul class="dropdown-menu profile-body" aria-labelledby="dropdownMenuLink3">
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Message</a></li>
+						<li><a href="#">Setting</a></li>
+						<li class="power-off"><a href="#"><i class="fas fa-power-off"></i></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--end profile-->
+
+	</header>
+
+
+	<!--Sidebar-->
+	<div id="sidebar-area" class="main-sidebar">
+		<div class="the-spacer" style="margin-bottom: 30px;"></div>
+		<div class="side-menu">
+				<ul>
+
+					<li class="side-menu-item"><a class="menu-link-item" href="payroll.html"><i style="margin-right: 7px;" class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+
+					<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample30" role="button" aria-expanded="false" aria-controls="collapseExample30" href="#"><i class="fas fa-search" style="margin-right: 7px;"></i> Search <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
+						<ul class="collapse" id="collapseExample30">
+							<li><a href="#">Employee</a></li>
+							<li><a href="#">Installment</a></li>
+							<li><a href="#">Loan</a></li>
+							<li><a href="#">Passport</a></li>
+						</ul>
+					</li>
+
+					<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4" href="#"><i style="margin-right: 7px;" class="fas fa-hand-holding-usd"></i> Salary <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
+						<ul class="collapse" id="collapseExample4">
+							<li><a href="add-payroll.html">Add</a></li>
+							<li><a href="#">Search</a></li><!--also show list of all taken loan-->
+						</ul>
+					</li>
+
+					<li class="side-menu-item"><a class="menu-link-item" href="#"><i style="margin-right: 7px;" class="fas fa-comments"></i> Message</a></li>
+
+					<li class="side-menu-item"><a class="menu-link-item" data-toggle="collapse" href="#collapseExample34" role="button" aria-expanded="false" aria-controls="collapseExample34" href="#"><i style="margin-right: 7px;" class="fas fa-list-ul"></i> Others <i class="fas fa-angle-down" style="position: absolute; right: 20px; padding-top: 3px;"></i></a>
+						<ul class="collapse" id="collapseExample34">
+							<li><a href="#">View Hourly Rates</a></li>
+							<li><a href="#">Project List</a></li>
+						</ul>
+					</li>
+
+				</ul>
+		</div>
+	</div>
+
+	<!--Content area-->
+	<div id="content-area" class="main-content-area">
+		<!--spacer-->
+		<div class="the-spacer"></div>
+		<!--end spacer-->
+
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="page-header-heading"><h4>Salary Add Form <span class="payroll-badge">Payroll</span></h4></div>
+			</div>
+
+
+			
+			<!--search-->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="the-search-bar box-shadow">
+						<form>
+						  <div class="form-row">
+						    <div class="form-group col-md-6">
+						      <input type="search" class="form-control" id="inputEmail4" placeholder="Search..." required>
+						    </div>
+						    <div class="form-group col-md-3">
+								<select id="inputState" class="form-control">
+									<option selected>Project ID</option>
+									<option>Employee ID</option>
+									<option>Passport No.</option>
+								</select>
+						    </div>
+						    <div class="form-group col-md-3">
+						      <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fas fa-search"></i> &nbsp;&nbsp;Search</button>
+						    </div>
+						  </div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!--search-->
+			
+
+			<!--Employee Registration-->
+			<div class="row">
+
+				<div class="col-md-12">
+					<!--form holder-->
+					<div class="form-holder box-shadow pt-5">
+
+
+						<div class="row align-items-center">
+							<div class="col-md-2 text-center">
+								<div class="row">
+									<div class="col-md-12">
+										<img style="border-radius: 4px;" src="assets/img/user.png" alt="employee img" width="100" height="100">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-10">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="result-head">company id</div>
+										<div class="result-body">1001</div>
+									</div>
+									<div class="col-md-3">
+										<div class="result-head">project id</div>
+										<div class="result-body">ABC-1001</div>
+									</div>
+									<div class="col-md-3">
+										<div class="result-head">passport no</div>
+										<div class="result-body">BD258096</div>
+									</div>
+									<div class="col-md-3">
+										<div class="result-head">full name</div>
+										<div class="result-body">MR JHON DOE</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-3">
+										<div class="result-head">due visa no</div>
+										<div class="result-body">02 | 03</div>
+									</div>
+									<div class="col-md-3">
+										<div class="result-head">project working</div>
+										<div class="result-body">ABCDEFZH</div>
+									</div>
+									<div class="col-md-3">
+										<div class="result-head">status</div>
+										<div class="result-body">ACTIVE</div>
+									</div>
+									<div class="col-md-3">
+										<div class="result-head">due balance</div>
+										<div class="result-body" style="color: red;">RM 5,000</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<div class="result-head"></div>
+										<div class="result-body"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="result-head"></div>
+										<div class="result-body"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="result-head"></div>
+										<div class="result-body"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="result-head">Loan Due Balance</div>
+										<div class="result-body" style="color: red;">RM 2,000</div>
+									</div>
+								</div>
+								<div class="row mt-3">
+									<div class="col-md-12">
+										<textarea style="width: 100%;" rows="1" placeholder="Remark" class="the-remark"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<form>
+							<!--Basic Information-->
+						  <h5 class="the-form-heading">Salary for Month</h5>
+						  <div class="form-row">
+						    <div class="form-group col-md-6">
+						      <label for="inputEmail4">Salary Start Month</label>
+						      <input type="date" class="form-control" id="inputEmail4" required>
+						    </div>
+						    <div class="form-group col-md-6">
+						      <label for="inputPassword4">Salary End Month</label>
+						      <input type="date" class="form-control" id="inputPassword4"  required>
+						    </div>
+						  </div>
+							<!--Basic Information-->
+						  <h5 class="the-form-heading">Basic</h5>
+						  <div class="form-row">
+						    <div class="form-group col-md-4">
+						      <label for="inputEmail4">12 HRS/MS (days)</label>
+						      <input type="number" class="form-control" id="inputEmail4" required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">8 HRS/MS (days)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">12 HRS/NS (days)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						  </div>
+						  <div class="form-row">
+						    <div class="form-group col-md-4">
+						      <label for="inputEmail4">REST DAY (hrs)</label>
+						      <input type="number" class="form-control" id="inputEmail4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">PH (hrs)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">POSITION ALLOWANCE (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						  </div>
+
+						  <!--Extra Information-->
+						  <h5 class="the-form-heading">Extra Payments</h5>
+						  <div class="form-row">
+						    <div class="form-group col-md-4">
+						      <label for="inputEmail4">12 HRS/MS (RM)</label>
+						      <input type="number" class="form-control" id="inputEmail4" required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">8 HRS/MS (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">12 HRS/NS (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						  </div>
+						  <div class="form-row">
+						    <div class="form-group col-md-4">
+						      <label for="inputEmail4">REST DAY (RM)</label>
+						      <input type="number" class="form-control" id="inputEmail4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">PH (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">ATTENDANCE ALLOWANCE (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						  </div>
+						  <div class="form-row">
+						    <div class="form-group col-md-4">
+						      <label for="inputEmail4">ROOM LEADER ALLOWANCE (RM)</label>
+						      <input type="number" class="form-control" id="inputEmail4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">REFUND (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4" style="color: #03C03C">GROSS PAY (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						  </div>
+
+						  <!--Deduction Information-->
+						  <h5 class="the-form-heading">Deduction</h5>
+						  <div class="form-row">
+						    <div class="form-group col-md-4">
+						      <label for="inputEmail4">REHIRING (RM)</label>
+						      <input type="number" class="form-control" id="inputEmail4" required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">UNIFORMS (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">ADVANCE/LOAN (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						  </div>
+						  <div class="form-row">
+						    <div class="form-group col-md-4">
+						      <label for="inputEmail4">UNDERTIME (RM)</label>
+						      <input type="number" class="form-control" id="inputEmail4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">ABSCON (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">LATENESS (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						  </div>
+						  <div class="form-row">
+						    <div class="form-group col-md-4">
+						      <label for="inputEmail4">HOSTEL (RM)</label>
+						      <input type="number" class="form-control" id="inputEmail4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">OTHERS (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4" style="color: red">TOTAL DEDUCTION (RM)</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						  </div>
+
+
+						  <!--Project Information-->
+						  <h5 class="the-form-heading">NET PAYABLE</h5>
+						  <div class="form-row">
+						    <div class="form-group col-md-4">
+						      <label for="inputEmail4" style="color: green">NET PAY (RM)</label>
+						      <input type="number" class="form-control" id="inputEmail4" required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">ROUND AMOUNT</label>
+						      <input type="number" class="form-control" id="inputPassword4"  required>
+						    </div>
+						    <div class="form-group col-md-4">
+						      <label for="inputPassword4">REMARK</label>
+						      <input type="text" class="form-control" id="inputPassword4"  required>
+						    </div>
+						  </div>
+						  <button type="submit" class="btn btn-primary btn-lg btn-block mt-5">Add Salary</button>
+						</form>
+						<!--end form-->
+					</div>
+					<!--form holder-->
+				</div>
+				<!--end col-md-12-->
+			</div>
+			<!--end row-->
+
+
+		</div>
+		<!-- container-fluid -->
+	</div>
+
+
+
+
+
+
+
+
+<!--jQuery JS-->
+<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+<!--Popper JS-->
+<script src="assets/js/popper.min.js"></script>
+<!--Bootstrap JS-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!--Custome JS-->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
